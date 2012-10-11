@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ doubleMove()
+comment1.params=
+comment1.target=void\ walkOneEdge()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\n\ In\ the\ 'act()'\ method\ you\ can\ write\ your\ program\ for\ Kara\ <br>\n\ <i>In\ der\ Methode\ 'act()'\ koennen\ die\ Befehle\ fuer\ Kara\ programmiert\ werden</i>\n
+numComments=3
