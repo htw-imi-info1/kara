@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Mushroom()
+comment0.text=\r\n\ Create\ a\ Mushroom.\r\n
+comment1.params=onTarget
+comment1.target=Mushroom(boolean)
+comment1.text=\r\n\ Create\ a\ Mushroom.\r\n\ \r\n\ @param\ onTarget\ if\ true,\ the\ on-target-image\ is\ used.\r\n
+comment2.params=
+comment2.target=void\ updateImage()
+comment2.text=\r\n\ If\ the\ Mushroom\ is\ on\ target\ (i.e.\ on\ a\ Leaf),\ the\ on-target-image,\ \r\n\ otherwise\ the\ default\ image\ is\ shown.\r\n
+comment3.params=
+comment3.target=void\ showDefaultImage()
+comment3.text=\r\n\ Shows\ the\ default\ image.\r\n
+comment4.params=
+comment4.target=void\ showOnTargetImage()
+comment4.text=\r\n\ Shows\ the\ on-target-image.\r\n
+comment5.params=world
+comment5.target=void\ addedToWorld(greenfoot.World)
+comment5.text=\r\n\ This\ method\ is\ called\ when\ a\ new\ Mushroom\ is\ added\ to\ the\ world.\ It\ checks\ \r\n\ whether\ it\ is\ ok\ to\ put\ it\ there.\r\n
+comment6.params=x\ y
+comment6.target=void\ setLocation(int,\ int)
+comment6.text=\r\n\ Overriding\ setLocation(...)\ of\ the\ Actor\ class\ to\ prevent\ dragging\ the\ Mushroom\ \r\n\ on\ a\ Kara,\ Tree,\ or\ another\ Mushroom.\r\n
+numComments=7

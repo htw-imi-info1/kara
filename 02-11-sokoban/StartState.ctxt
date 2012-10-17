@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=gameScreen
+comment0.target=StartState(GameScreen)
+comment1.params=
+comment1.target=void\ initScreen()
+comment1.text=\r\n\ Initializes\ the\ screen.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ The\ act\ method\ is\ called\ by\ the\ GameScreen\ to\ perform\ the\ action\ in\ the\ ScreenState.\r\n
+comment3.params=key
+comment3.target=void\ handleKeyPress(java.lang.String)
+comment3.text=\r\n\ Handles\ the\ key\ press\ event.\r\n
+comment4.params=password
+comment4.target=void\ checkPassword(java.lang.String)
+comment4.text=\r\n\ Tests\ whether\ the\ specified\ password\ matches\ to\ a\ level\ password.\r\n\ If\ a\ match\ is\ found,\ the\ according\ level\ number\ is\ saved.\r\n
+comment5.params=
+comment5.target=void\ handleStartGame()
+comment5.text=\r\n\ Handles\ the\ start\ game\ event.\r\n
+numComments=6

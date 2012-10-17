@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=gameScreen
+comment0.target=LevelSplashState(GameScreen)
+comment1.params=
+comment1.target=void\ initScreen()
+comment1.text=\r\n\ Initializes\ the\ screen.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ The\ act\ method\ is\ called\ by\ the\ GameScreen\ to\ perform\ the\ action\ in\ the\ ScreenState.\r\n
+comment3.params=
+comment3.target=void\ handleStartLevel()
+numComments=4
