@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.params=
 comment0.target=KaraWorld()
-comment0.text=\r\n\ Creates\ a\ world\ for\ Kara.\r\n
+comment0.text=\n\ Creates\ a\ world\ for\ Kara.\n
 comment1.params=
 comment1.target=void\ prepare()
-comment1.text=\r\n\ Prepare\ the\ world,\ i.e.\ create\ all\ initial\ actors.\r\n\ \r\n\ Hint\:\r\n\ First\ create\ and\ position\ all\ Actors\ with\ the\ mouse\ in\ the\ world.\r\n\ Then\ right-click\ on\ the\ world\ and\ choose\ 'Save\ the\ World'.\ This\ will\r\n\ automatically\ generate\ the\ content\ of\ this\ method.\r\n
+comment1.text=\n\ Prepare\ the\ world,\ i.e.\ create\ all\ initial\ actors.\n\ \n\ Hint\:\n\ First\ create\ and\ position\ all\ Actors\ with\ the\ mouse\ in\ the\ world.\n\ Then\ right-click\ on\ the\ world\ and\ choose\ 'Save\ the\ World'.\ This\ will\n\ automatically\ generate\ the\ content\ of\ this\ method.\n
 numComments=2

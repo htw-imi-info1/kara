@@ -16,6 +16,24 @@ public class MyKara extends Kara
      */
     public void act() 
     {
-        
+        boolean wasInTunnel = false;
+        while (!onLeaf()){
+            if(!wasInTunnel && !inTunnel())
+            {
+                wasInTunnel = false;
+            }
+            if (inTunnel() && !wasInTunnel)
+            {
+                putLeaf();
+                wasInTunnel = true;
+
+            }
+            move();
+        }
+
     }  
+
+    public boolean inTunnel(){
+        return treeLeft() && treeRight();
+    }
 }
