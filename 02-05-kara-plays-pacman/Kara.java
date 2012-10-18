@@ -14,6 +14,7 @@ import javax.swing.JOptionPane;
  */
 public class Kara extends Actor 
 {
+
     private static final int DIRECTION_RIGHT = 0;
     private static final int DIRECTION_DOWN = 90;
     private static final int DIRECTION_LEFT = 180;

@@ -151,5 +151,11 @@ public class KaraWorld extends World
         addObject(leaf22, 5, 6);
         Leaf leaf23 = new Leaf();
         addObject(leaf23, 5, 5);
+        removeObject(mykara);
+        KaraWithState karawithstate = new KaraWithState();
+        addObject(karawithstate, 1, 1);
+        removeObject(karawithstate);
+        FasterKara fasterkara = new FasterKara();
+        addObject(fasterkara, 1, 1);
     }
 }

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ act()
+comment0.text=\n\ Act\ -\ do\ whatever\ the\ MyKara2\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment1.params=
+comment1.target=boolean\ leafLeft()
+comment2.params=
+comment2.target=boolean\ leafRight()
+comment3.params=
+comment3.target=void\ tryToMove()
+comment4.params=
+comment4.target=void\ moveBack()
+numComments=5

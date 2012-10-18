@@ -105,7 +105,8 @@ public class KaraWorld_B extends World
         addObject(leaf58, 3, 1);
         Leaf leaf59 = new Leaf();
         addObject(leaf59, 2, 1);
-        MyKara mykara2 = new MyKara();
+    
+        MyKara2 mykara2 = new MyKara2();
         addObject(mykara2, 2, 1);
     }
 }
