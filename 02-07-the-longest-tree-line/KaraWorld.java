@@ -99,8 +99,10 @@ public class KaraWorld extends World
         addObject(tree29, 17, 4);
         Tree tree30 = new Tree();
         addObject(tree30, 17, 3);
+        
         MyKara mykara = new MyKara();
         addObject(mykara, 0, 9);
+        
         Leaf leaf = new Leaf();
         addObject(leaf, 19, 9);
     }

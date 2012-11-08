@@ -1,5 +1,9 @@
 #BlueJ class context
 comment0.params=
 comment0.target=void\ act()
-comment0.text=\r\n\ In\ the\ 'act()'\ method\ you\ can\ write\ your\ program\ for\ Kara\ <br>\r\n\ <i>In\ der\ Methode\ 'act()'\ koennen\ die\ Befehle\ fuer\ Kara\ programmiert\ werden</i>\r\n
-numComments=1
+comment0.text=\n\ In\ the\ 'act()'\ method\ you\ can\ write\ your\ program\ for\ Kara\ <br>\n\ <i>In\ der\ Methode\ 'act()'\ koennen\ die\ Befehle\ fuer\ Kara\ programmiert\ werden</i>\n
+comment1.params=
+comment1.target=int\ findMaxRow()
+comment2.params=
+comment2.target=int\ countNextLine()
+numComments=3
