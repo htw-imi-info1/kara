@@ -1,20 +1,20 @@
 #BlueJ class context
 comment0.params=text\ width\ height\ font
 comment0.target=InputLabel(java.lang.String,\ int,\ int,\ java.awt.Font)
-comment0.text=\r\n\ Constructor\ for\ an\ InputLabel.\r\n
+comment0.text=\n\ Constructor\ for\ an\ InputLabel.\n
 comment1.params=maxLength
 comment1.target=void\ setMaxLength(int)
-comment1.text=\r\n\ Sets\ the\ maximum\ length\ of\ the\ input\ String.\r\n
+comment1.text=\n\ Sets\ the\ maximum\ length\ of\ the\ input\ String.\n
 comment2.params=allowSpace
 comment2.target=void\ setAllowSpace(boolean)
-comment2.text=\r\n\ Sets\ whether\ spaces\ should\ be\ allowed\ as\ input.\r\n
+comment2.text=\n\ Sets\ whether\ spaces\ should\ be\ allowed\ as\ input.\n
 comment3.params=allowBackspace
 comment3.target=void\ setAllowBackspace(boolean)
-comment3.text=\r\n\ Sets\ whether\ backspaces\ should\ be\ allowed\ as\ input.\r\n
+comment3.text=\n\ Sets\ whether\ backspaces\ should\ be\ allowed\ as\ input.\n
 comment4.params=
 comment4.target=boolean\ wasTextChanged()
-comment4.text=\r\n\ Returns\ whether\ the\ text\ was\ changed.\r\n
+comment4.text=\n\ Returns\ whether\ the\ text\ was\ changed.\n
 comment5.params=key
 comment5.target=void\ handleKeyPress(java.lang.String)
-comment5.text=\r\n\ Changes\ the\ label\ text\ according\ to\ the\ pressed\ key.\r\n\ \r\n\ Only\ single\ characters\ are\ supported.\r\n\ "space"\ and\ "backspace"\ can\ optionally\ be\ supported.\r\n
+comment5.text=\n\ Changes\ the\ label\ text\ according\ to\ the\ pressed\ key.\n\ \n\ Only\ single\ characters\ are\ supported.\n\ "space"\ and\ "backspace"\ can\ optionally\ be\ supported.\n
 numComments=6
