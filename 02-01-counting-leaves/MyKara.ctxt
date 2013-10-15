@@ -2,6 +2,4 @@
 comment0.params=
 comment0.target=void\ act()
 comment0.text=\n\ In\ the\ 'act()'\ method\ you\ can\ write\ your\ program\ for\ Kara\ <br>\n\ <i>In\ der\ Methode\ 'act()'\ koennen\ die\ Befehle\ fuer\ Kara\ programmiert\ werden</i>\n
-comment1.params=
-comment1.target=void\ countLeaf()
-numComments=2
+numComments=1

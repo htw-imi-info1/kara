@@ -16,36 +16,6 @@ public class MyKara extends Kara
      */
     public void act() 
     {
-        while(!treeFront()){
-            while (onLeaf()){
-                removeLeaf();
-                tryToMove();
-            }
-            moveBack();
-            tryDirection();
-        }
-        Greenfoot.stop();   
-    }  
-
-    public void moveBack(){
-        turnRight();
-        turnRight();
-        move();
-        turnRight();
-        turnRight();
-
-    }
-
-    public void tryDirection(){
-        turnLeft();
-        tryToMove();
-    }
-
-    public void tryToMove(){
-        if(!treeFront()){
-            move();
-        }
-    }
-
-    
+       
+    }      
 }

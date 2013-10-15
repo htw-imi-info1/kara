@@ -16,16 +16,7 @@ public class MyKara extends Kara
      */
     public void act() 
     {
-        while(!treeFront()){
-            putLeafIfEmpty();
-            move();
-        }     
-     //   putLeafIfEmpty();
+           
     }  
-    public void putLeafIfEmpty(){
-        if(!onLeaf()){
-            putLeaf();
-        }
     
-    }
 }

@@ -103,8 +103,6 @@ public class KaraWorld extends World
         addObject(tree31, 0, 2);
         Tree tree32 = new Tree();
         addObject(tree32, 0, 1);
-        MyKara mykara = new MyKara();
-        addObject(mykara, 1, 1);
         Leaf leaf = new Leaf();
         addObject(leaf, 5, 3);
         Leaf leaf2 = new Leaf();
@@ -151,11 +149,9 @@ public class KaraWorld extends World
         addObject(leaf22, 5, 6);
         Leaf leaf23 = new Leaf();
         addObject(leaf23, 5, 5);
-        removeObject(mykara);
-        KaraWithState karawithstate = new KaraWithState();
-        addObject(karawithstate, 1, 1);
-        removeObject(karawithstate);
-        FasterKara fasterkara = new FasterKara();
-        addObject(fasterkara, 1, 1);
+         MyKara mykara = new MyKara();
+        addObject(mykara, 1, 1);
+       
+      
     }
 }
