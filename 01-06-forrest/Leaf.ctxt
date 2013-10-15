@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=world
+comment0.target=void\ addedToWorld(greenfoot.World)
+comment0.text=\n\ This\ method\ is\ called\ when\ a\ new\ Leaf\ is\ added\ to\ the\ world.\ It\ checks\ whether\n\ it\ is\ ok\ to\ put\ it\ there.\n
+comment1.params=x\ y
+comment1.target=void\ setLocation(int,\ int)
+comment1.text=\n\ Overriding\ setLocation(...)\ of\ the\ Actor\ class\ to\ prevent\ dragging\ the\ Leaf\ \n\ on\ a\ Tree\ or\ another\ Leaf.\n
+numComments=2
