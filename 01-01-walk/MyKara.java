@@ -17,17 +17,14 @@ public class MyKara extends Kara
      */
     public void act() 
     {
-       while(!treeFront()){
-           move();
-        }
+       move();
+       move();
+       move();
+       move();
+       move();
+       move();
+        move();
     
     }  
-    public void move(int c){
-        int counter = 1;
-        while (counter <= c){
-          move();
-          counter = counter +1;
-        }
-     
-    }
+  
 }

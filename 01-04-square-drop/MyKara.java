@@ -10,12 +10,19 @@ import greenfoot.*;
  */
 public class MyKara extends Kara
 {
-   
+
     /**
      * In the 'act()' method you can write your program for Kara <br>
      * <i>In der Methode 'act()' koennen die Befehle fuer Kara programmiert werden</i>
      */
     public void act() 
     {
+        int counter = 1;
+        while(counter <= 4){
+            counter = counter + 1;
+            move(5);
+            putLeaf();
+            turnRight();
+        }
     }  
 }

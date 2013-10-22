@@ -41,10 +41,7 @@ public class KaraWorld extends World
     {
 
         MyKara mykara = new MyKara();
-        addObject(mykara, 1, 5);
-        mykara.setLocation(0, 1);
+        addObject(mykara, 0, 1);
 
-        Tree tree = new Tree();
-        addObject(tree, 6, 1);
     }
 }
