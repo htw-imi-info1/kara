@@ -11,16 +11,24 @@ import greenfoot.*;
 public class MyKara extends Kara
 {
     int counter = 0;
- 
+
     /**
      * In the 'act()' method you can write your program for Kara <br>
      * <i>In der Methode 'act()' koennen die Befehle fuer Kara programmiert werden</i>
      */
     public void act() 
     {
-       
 
-    } 
+        if(onLeaf())
+            counter++;
+        move();
 
-    
+        if(treeFront()){
+            if(onLeaf())
+                counter++;
+            Greenfoot.stop();
+            System.out.println("das waren "+counter+" Blätter");
+        } 
+
+    }
 }

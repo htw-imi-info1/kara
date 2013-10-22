@@ -10,14 +10,23 @@ import greenfoot.*;
  */
 public class MyKara extends Kara
 {
+    
+    boolean ichWarSchonMalImTunnel = false;
     /**
      * In the 'act()' method you can write your program for Kara <br>
      * <i>In der Methode 'act()' koennen die Befehle fuer Kara programmiert werden</i>
      */
     public void act() 
     {
-        
+        if (inTunnel() && !ichWarSchonMalImTunnel){
+            putLeaf();
+            ichWarSchonMalImTunnel = true;
+        }
+        move();
     }  
 
-   
+    public boolean inTunnel(){
+        return treeLeft() && treeRight();
+    }
+
 }

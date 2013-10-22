@@ -43,5 +43,8 @@ public class KaraWorld extends World
         MyKara mykara = new MyKara();
         addObject(mykara, 1, 5);
         mykara.setLocation(0, 0);
+        removeObject(mykara);
+        BetterReadableKara betterreadablekara = new BetterReadableKara();
+        addObject(betterreadablekara, 0, 0);
     }
 }
