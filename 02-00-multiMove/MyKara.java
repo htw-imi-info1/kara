@@ -18,16 +18,8 @@ public class MyKara extends Kara
      */
     public void act() 
     {
-      multiMove(5);
-
+   
     } 
 
-    public void multiMove(int n){
-        int i = 0;
-        while (i < n){
-            move();
-            i++; // same as i = i +1;
-        }
-
-    }
+    
 }
