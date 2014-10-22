@@ -19,4 +19,17 @@ public class MyKara extends Kara
     {
 
     }  
+
+    public void walkAroundTree()
+    {
+        turnLeft();
+        move();
+        turnRight();
+        move();
+        move();
+        turnRight();
+        move();
+        turnLeft();
+
+    }
 }

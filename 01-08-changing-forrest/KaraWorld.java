@@ -44,7 +44,6 @@ public class KaraWorld extends World
         addObject(mykara, 1, 5);
         mykara.setLocation(0, 1);
 
-
         Tree tree = new Tree();
         addObject(tree, 1, 1);
         Tree tree2 = new Tree();
@@ -53,9 +52,12 @@ public class KaraWorld extends World
         addObject(tree3, 5, 1);
         Tree tree4 = new Tree();
         addObject(tree4, 7, 1);
-        
+
         Leaf leaf = new Leaf();
         addObject(leaf, 5, 0);
         leaf.setLocation(8, 1);
+        leaf.setLocation(12, 1);
+        tree4.setLocation(9, 1);
+        tree3.setLocation(6, 1);
     }
 }
