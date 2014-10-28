@@ -14,8 +14,16 @@ public class MyKara extends Kara
      * In the 'act()' method you can write your program for Kara <br>
      * <i>In der Methode 'act()' koennen die Befehle fuer Kara programmiert werden</i>
      */
+    public boolean baumLinksOderRechts(){
+        return (treeLeft() || treeRight());
+    }
+
     public void act() 
     {
-       
+        if (baumLinksOderRechts()){
+            if (!onLeaf()) {putLeaf();}	
+        }
+        move();
+
     }  
 }

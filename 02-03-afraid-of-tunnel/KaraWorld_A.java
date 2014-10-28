@@ -59,5 +59,7 @@ public class KaraWorld_A extends World
         addObject(tree9, 5, 2);
         MyKara mykara = new MyKara();
         addObject(mykara, 0, 1);
+        Mushroom mushroom = new Mushroom();
+        addObject(mushroom, 11, 1);
     }
 }
