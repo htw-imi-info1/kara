@@ -16,15 +16,19 @@ public class MyKara extends Kara
      * <i>In der Methode 'act()' koennen die Befehle fuer Kara programmiert werden</i>
      */
     int counter = 0;
+    public void countLeaf() {
+        if (onLeaf()){
+            counter = counter + 1;
+            System.out.println("counter: "+counter);
+        }
+    }
 
     public void act() 
     {
-        if (onLeaf()){
-            counter = counter + 1;
-        }
+        countLeaf();
         move();
-        System.out.println("counter: "+counter);
         if (treeFront()){
+            countLeaf();
             Greenfoot.stop();
         }
     } 
