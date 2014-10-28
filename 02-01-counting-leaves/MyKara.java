@@ -26,10 +26,10 @@ public class MyKara extends Kara
     public void act() 
     {
         countLeaf();
-        move();
         if (treeFront()){
-            countLeaf();
             Greenfoot.stop();
+        } else {
+            move();
         }
     } 
 

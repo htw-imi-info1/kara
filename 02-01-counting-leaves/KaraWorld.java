@@ -57,5 +57,7 @@ public class KaraWorld extends World
         addObject(leaf6, 14, 0);
         Leaf leaf7 = new Leaf();
         addObject(leaf7, 18, 0);
+        Leaf leaf8 = new Leaf();
+        addObject(leaf8, 0, 0);
     }
 }
