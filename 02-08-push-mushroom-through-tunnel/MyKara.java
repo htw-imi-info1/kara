@@ -17,6 +17,33 @@ public class MyKara extends Kara
      */
     public void act() 
     {
-        
-    }  
+        tunnelEingangFinden();
+        pilzFinden();
+        pilzVorTunneleingangSchieben();
+        pilzAufDasKleeBlattStossen();
+        Greenfoot.stop();
+    } 
+
+    public void tunnelEingangFinden(){
+        while(!treeFront()){move();}
+        turnRight();
+        while(treeLeft()){move();}
+        turnLeft();
+    }
+
+    public void pilzFinden(){
+        while(!treeFront()){
+            move();
+         
+        }   sucheUnten();
+    }
+
+    public void sucheUnten(){
+        turnRight();move();turnRight();
+        while(!mushroomFront())move();
+
+    }
+    public void pilzVorTunneleingangSchieben(){}
+    public void pilzAufDasKleeBlattStossen(){}
+    
 }
