@@ -180,12 +180,8 @@ public class KaraWorld extends World
         MyKara mykara2 = new MyKara();
         addObject(mykara2, 18, 4);
         mykara2.turnRight();
-        mykara2.pilzFinden();
-        mykara2.setLocation(13, 4);
         mykara2.turnRight();
         mushroom.setLocation(17, 6);
-        mykara2.pilzFinden();
-        mykara2.pilzVorTunneleingangSchieben(-2);
         mushroom.setLocation(16, 6);
         removeObject(mykara2);
     }
