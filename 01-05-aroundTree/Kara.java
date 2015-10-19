@@ -18,7 +18,7 @@ public class Kara extends Actor
     private static final int DIRECTION_DOWN = 90;
     private static final int DIRECTION_LEFT = 180;
     private static final int DIRECTION_UP = 270;
-    
+
     /**
      * Kara makes a step in the current direction <br>
      * <i>Kara macht einen Schritt in die aktuelle Richtung</i>
@@ -57,7 +57,7 @@ public class Kara extends Actor
         moveActor(this, getRotation());
         Greenfoot.delay(1);
     }
-    
+
     /**
      * Kara turns left by 90 degrees <br>
      * <i>Kara dreht sich um 90° nach links</i>
@@ -93,7 +93,7 @@ public class Kara extends Actor
         else
         {
             showWarning("Kara can't put a leaf on top of another leaf!",
-                    "Kara kann kein Kleeblatt auf ein Feld legen, auf dem schon eines ist!");
+                "Kara kann kein Kleeblatt auf ein Feld legen, auf dem schon eines ist!");
         }
     }
 
@@ -112,7 +112,7 @@ public class Kara extends Actor
         else
         {
             showWarning("There is no leaf that Kara could remove here!", 
-                    "Kara kann hier kein Blatt auflesen!");
+                "Kara kann hier kein Blatt auflesen!");
         }
     }
 
@@ -170,9 +170,9 @@ public class Kara extends Actor
     {
         return getObjectInFront(getRotation(), 1, Mushroom.class) != null;
     }
-    
+
     /*----- END OF STANDARD KARA METHODS! BELOW ARE JUST SOME HELPER METHODS ----- */
-    
+
     /**
      * Finds an object in the specified direction. 
      * 
@@ -246,7 +246,7 @@ public class Kara extends Actor
             case DIRECTION_UP:
             actor.setLocation(actor.getX(), modulo((actor.getY() - 1), getWorld().getHeight()));
             break;
-            
+
             default: // Not a valid direction
             break;
         }
@@ -275,11 +275,11 @@ public class Kara extends Actor
      */
     private void showWarning(String englishMessage, String germanMessage) {
         String message = "<html>" + englishMessage + "<p><i>" + germanMessage + "</i></html>";
-        
+
         Object[] options = {"OK", "Exit Program"}; 
         int choice = JOptionPane.showOptionDialog(null, message, "Warning", JOptionPane.DEFAULT_OPTION, 
                 JOptionPane.WARNING_MESSAGE, null, options, options[0]);
-        
+
         if (choice == 1) {
             // Emergency stop. Greenfoot should restart after this.
             System.exit(0);
@@ -291,5 +291,14 @@ public class Kara extends Actor
             // Repaint, otherwise the world might keep displaying a dialog in some cases
             getWorld().repaint();
         }
+    }
+    public int remainingSteps = 0;
+    public void stopAfterStep(int steps){
+        if (remainingSteps == 0)
+            remainingSteps = steps-1;
+        else
+            remainingSteps--;
+        if (remainingSteps <= 0)
+            Greenfoot.stop();
     }
 }
