@@ -40,11 +40,9 @@ public class KaraWorld1 extends World
     private void prepare() 
     {
 
-        Kara kara = new Kara();
-        addObject(kara, 1, 5);
-        CopyKara copykara = new CopyKara();
+        Kara copykara = new MyKara();
         addObject(copykara, 12, 0);
-        removeObject(kara);
+  
         copykara.setLocation(12, 24);
         copykara.turnLeft();
         Leaf leaf = new Leaf();

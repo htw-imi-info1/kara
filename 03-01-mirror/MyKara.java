@@ -16,19 +16,8 @@ public class MyKara extends Kara
      */
     public void act() 
     {
-        int counter = 0;
-        while(!treeFront()){
-            if (onLeaf()) {
-                counter = counter +1;
-            }
-            move();
-        }
-        System.out.println("Leaves: "+counter);
-        Greenfoot.stop();
+        
     }  
 
-    public void reverse(){
-        turnRight();
-        turnRight();
-    }
+    
 }

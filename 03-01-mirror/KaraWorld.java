@@ -40,14 +40,11 @@ public class KaraWorld extends World
     private void prepare() 
     {
 
-        Kara kara = new Kara();
-        addObject(kara, 1, 5);
-        CopyKara copykara = new CopyKara();
-        addObject(copykara, 12, 0);
-        removeObject(kara);
-        copykara.setLocation(12, 24);
-        copykara.turnLeft();
-        copykara.setLocation(4, 8);
+    
+        Kara kara = new MyKara();
+        addObject(kara, 12, 24);
+        kara.turnLeft();
+
         Leaf leaf = new Leaf();
         addObject(leaf, 3, 7);
         Leaf leaf2 = new Leaf();
@@ -94,5 +91,6 @@ public class KaraWorld extends World
         addObject(leaf71, 1, 3);
         Leaf leaf72 = new Leaf();
         addObject(leaf72, 2, 8);
+        kara.setLocation(4, 8);
     }
 }
