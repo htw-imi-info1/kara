@@ -57,5 +57,8 @@ public class KaraWorld extends World
         addObject(leaf6, 14, 0);
         Leaf leaf7 = new Leaf();
         addObject(leaf7, 18, 0);
+        LoopKara loopkara = new LoopKara();
+        addObject(loopkara, 1, 0);
+        removeObject(loopkara);
     }
 }
