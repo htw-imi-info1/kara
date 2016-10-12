@@ -23,22 +23,5 @@ public class MyKara extends Kara
         move();
         turnRight();
 
-        move();
-        move();
-        move();
-        move();
-        turnRight();
-
-        move();
-        move();
-        move();
-        move();
-        turnRight();
-
-        move();
-        move();
-        move();
-        move();
-        turnRight();
     }  
 }
