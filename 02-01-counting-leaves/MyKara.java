@@ -12,13 +12,17 @@ public class MyKara extends Kara
 {
     int counter = 0;
  
-    /**
-     * In the 'act()' method you can write your program for Kara <br>
-     * <i>In der Methode 'act()' koennen die Befehle fuer Kara programmiert werden</i>
-     */
+
     public void act() 
     {
-       
+       int localCounter = 0;
+       if (onLeaf()){
+           counter = counter +1;
+           localCounter = localCounter + 1;
+        }
+        move();
+        System.out.println("localCounter: "+localCounter);
+          System.out.println("counter: "+counter);
 
     } 
 
