@@ -14,9 +14,20 @@ public class MyKara extends Kara
      * In the 'act()' method you can write your program for Kara <br>
      * <i>In der Methode 'act()' koennen die Befehle fuer Kara programmiert werden</i>
      */
+   
+    boolean karaHasSeenTunnelEntrance = false;
+    
+    public boolean inTunnel(){
+       return treeLeft() && treeRight();
+    }
+    
     public void act() 
     {
-        
+        if (inTunnel() && !karaHasSeenTunnelEntrance){
+            putLeaf();     
+            karaHasSeenTunnelEntrance = true;
+        }
+        move();
     }  
 
    
