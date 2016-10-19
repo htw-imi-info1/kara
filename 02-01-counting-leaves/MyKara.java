@@ -11,20 +11,21 @@ import greenfoot.*;
 public class MyKara extends Kara
 {
     int counter = 0;
- 
 
     public void act() 
     {
-       int localCounter = 0;
-       if (onLeaf()){
-           counter = counter +1;
-           localCounter = localCounter + 1;
+        if (onLeaf()){
+            counter = counter +1;
         }
-        move();
-        System.out.println("localCounter: "+localCounter);
-          System.out.println("counter: "+counter);
+        if (treeFront()){
+
+            Greenfoot.stop(); 
+            System.out.println("counter: "+counter);
+        }
+        else {
+            move();
+        }
 
     } 
 
-    
 }
