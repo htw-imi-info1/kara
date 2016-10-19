@@ -16,11 +16,11 @@ public class MyKara extends Kara
      */
     public void act() 
     {
+        putLeafIfMissing();       
+
         if (treeFront()){
-            putLeafIfMissing();       
             Greenfoot.stop();
         }  else {
-            putLeafIfMissing();
             move();
         }
     }  
