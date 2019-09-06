@@ -1,8 +1,7 @@
 import greenfoot.*;
 import java.util.HashMap;
 import java.util.List;
-import java.awt.Color;
-import java.awt.Font;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -31,16 +30,16 @@ public class GameScreen extends World
     public static final int CELL_SIZE = 28;
     public static final int WIDTH_IN_PIXELS = WIDTH_IN_CELLS * CELL_SIZE;
     public static final int HEIGHT_IN_PIXELS = HEIGHT_IN_CELLS * CELL_SIZE;
-    
+
     // fonts and colors
     public static final String FONT_NAME = "Tahoma";
-    public static final Font FONT_S = new Font(FONT_NAME, Font.PLAIN, 12);
-    public static final Font FONT_S_BOLD = new Font(FONT_NAME, Font.BOLD, 12);
-    public static final Font FONT_M = new Font(FONT_NAME, Font.PLAIN, 17);
-    public static final Font FONT_L = new Font(FONT_NAME, Font.PLAIN, 20);
-    public static final Font FONT_XL = new Font(FONT_NAME, Font.PLAIN, 30);
-    public static final Font FONT_XL_BOLD = new Font(FONT_NAME, Font.BOLD, 30);
-    public static final Font FONT_XXL = new Font(FONT_NAME, Font.PLAIN, 50);
+    public static final Font FONT_S = new Font(FONT_NAME, 12);
+    public static final Font FONT_S_BOLD = new Font(FONT_NAME, true, false, 12);
+    public static final Font FONT_M = new Font(FONT_NAME,  17);
+    public static final Font FONT_L = new Font(FONT_NAME,  20);
+    public static final Font FONT_XL = new Font(FONT_NAME,  30);
+    public static final Font FONT_XL_BOLD = new Font(FONT_NAME, true, false, 30);
+    public static final Font FONT_XXL = new Font(FONT_NAME,  50);
 
     // all actor icons (this is a trick to get the default image that was chosen for actors)
     public static final GreenfootImage ICON_LEAF = (new Leaf()).getImage();
@@ -49,7 +48,7 @@ public class GameScreen extends World
     public static final GreenfootImage ICON_TREE = (new Tree()).getImage();
     public static final GreenfootImage ICON_KARA = (new Kara()).getImage();
     public static final GreenfootImage ICON_MY_KARA = (new MyKara()).getImage();
-    
+
     // all general icons
     public static final GreenfootImage ICON_START = new GreenfootImage("newmooon_start.png");
     public static final GreenfootImage ICON_OK = new GreenfootImage("newmooon_ok.png");
@@ -113,7 +112,7 @@ public class GameScreen extends World
         // init the level number and number of moves
         currentLevelNumber = 1;
         numberOfMoves = 0;
-        
+
         // init the highscore manager
         if (MyKara.HIGHSCORE_ENABLED)
         {
@@ -127,7 +126,7 @@ public class GameScreen extends World
                 highscoreManager = new ServerHighscore();
             } 
         }
-        
+
         // skip the start menu if in developer mode
         if (MyKara.DEVELOPER_MODE)
         {
@@ -138,7 +137,7 @@ public class GameScreen extends World
             setState(startState);
         }
     }
-    
+
     /**
      * This method is called by the Greenfoot system when the execution has started.
      */
@@ -150,7 +149,7 @@ public class GameScreen extends World
             highscoreManager.initHighscores();
         }
     }
-    
+
     /**
      * Sets and initializes the specified screen state.
      * Before the new screen is initialized, all objects in the world are removed.
@@ -299,7 +298,7 @@ public class GameScreen extends World
         }
         return null;
     }
-    
+
     /**
      * Returns the number of moves that were made.
      */
@@ -341,7 +340,7 @@ public class GameScreen extends World
     {
         return isLevelComplete() && getCurrentLevelNumber() >= getNumberOfLevels();
     }
-    
+
     /**
      * Returns if the highscore is enabled and available.
      */
@@ -349,7 +348,7 @@ public class GameScreen extends World
     {
         return highscoreManager != null;
     }
-    
+
     /**
      * Returns if the highscore is enabled and available.
      */
@@ -359,10 +358,10 @@ public class GameScreen extends World
         {
             return true;
         }
-        
+
         return highscoreManager.isReadOnly();
     }
-    
+
     /**
      * Returns the name of the current player or empty String if none has been set.
      */
@@ -387,7 +386,7 @@ public class GameScreen extends World
         }
         highscoreManager.setCurrentPlayerName(playerName);
     }
-    
+
     /**
      * Returns true if the name of the current player can be set.
      */
@@ -405,7 +404,7 @@ public class GameScreen extends World
     {
         return getHighscoreForLevel(currentLevelNumber);
     }
-    
+
     /**
      * Returns the Highscore for the specified level.
      */
@@ -455,7 +454,7 @@ public class GameScreen extends World
         // Delegate to the current state
         state.act();
     }
-    
+
     /**
      * Retrieves the filename of the default image and adds the on-target postfix to
      * the filename to load the on-target-image.

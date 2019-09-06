@@ -1,6 +1,6 @@
 import greenfoot.*;
-import java.awt.Color;
-import java.awt.Font;
+
+
 
 /**
  * The level complete screen state.

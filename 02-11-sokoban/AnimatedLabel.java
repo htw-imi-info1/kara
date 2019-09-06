@@ -1,6 +1,6 @@
 import greenfoot.*;
-import java.awt.Font;
-import java.awt.Color;
+
+
 
 /**
  * A Label that can be animated to move around.

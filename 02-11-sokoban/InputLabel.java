@@ -1,5 +1,5 @@
 import greenfoot.*;
-import java.awt.Font;
+
 
 /**
  * This Label can be used to react to keyboard input and display it.

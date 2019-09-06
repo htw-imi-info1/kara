@@ -1,11 +1,13 @@
 #BlueJ class context
-comment0.params=gameScreen
-comment0.target=ScreenState(GameScreen)
-comment0.text=\n\ Create\ a\ ScreenState.\n\ \n\ @param\ gameScreen\ the\ game\ screen\ that\ uses\ this\ state.\n
-comment1.params=
-comment1.target=void\ initScreen()
-comment1.text=\n\ Initializes\ the\ screen.\n
+comment0.target=ScreenState
+comment0.text=\n\ The\ ScreenState\ is\ an\ abstract\ class\ for\ the\ screens\ in\ the\ game.\n\ <p>\n\ The\ class\ structure\ is\ made\ according\ to\ the\ state\ design\ pattern.\ \n\ \n\ @author\ Marco\ Jakob\ (majakob@gmx.ch)\n\ @version\ 1.3\ (2012-07-04)\n
+comment1.params=gameScreen
+comment1.target=ScreenState(GameScreen)
+comment1.text=\n\ Create\ a\ ScreenState.\n\ \n\ @param\ gameScreen\ the\ game\ screen\ that\ uses\ this\ state.\n
 comment2.params=
-comment2.target=void\ act()
-comment2.text=\n\ The\ act\ method\ is\ called\ by\ the\ GameScreen\ to\ perform\ the\ action\ in\ the\ ScreenState.\n
-numComments=3
+comment2.target=void\ initScreen()
+comment2.text=\n\ Initializes\ the\ screen.\n
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\n\ The\ act\ method\ is\ called\ by\ the\ GameScreen\ to\ perform\ the\ action\ in\ the\ ScreenState.\n
+numComments=4

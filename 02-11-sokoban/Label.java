@@ -1,6 +1,6 @@
 import greenfoot.*;
-import java.awt.Color;
-import java.awt.Font;
+
+
 import java.awt.FontMetrics;
 import java.awt.Graphics2D;
 
@@ -266,7 +266,7 @@ public class Label extends Actor
     {
         GreenfootImage pic = new GreenfootImage(width, height);
         Graphics2D graphics = (new GreenfootImage(1, 1)).getAwtImage().createGraphics();
-        graphics.setFont(getFont());
+        //graphics.setFont(getFont());
         FontMetrics fm = graphics.getFontMetrics();
         pic.setColor(getTextColor());
         pic.setFont(getFont());
