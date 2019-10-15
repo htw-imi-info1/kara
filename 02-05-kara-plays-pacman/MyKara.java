@@ -16,6 +16,18 @@ public class MyKara extends Kara
      */
     public void act() 
     {
-       
-    }      
+        if (leafRight()){
+            // go there and take it
+        } else if (leafFront()){
+            // go there and take it
+        } else if (leafLeft()){
+            // go there and take it
+        }
+    }   
+    public boolean leafRight(){
+    }
+    public boolean leafFront(){
+    }
+    public boolean leafLeft(){
+    }
 }
