@@ -24,13 +24,34 @@ public class MyKara extends Kara
             // go there and take it
         }
     }   
+
     public boolean leafRight(){
-        return false;
+        boolean foundLeaf = false;
+        turnRight();
+        move();
+        if (onLeaf())
+            foundLeaf = true;
+        turnLeft();turnLeft();
+        move();
+        turnRight();
+        return foundLeaf;
     }
+
     public boolean leafFront(){
         return false;
     }
+
     public boolean leafLeft(){
-        return false;
+        boolean foundLeaf = false;
+        turnLeft();
+        move();
+        if (onLeaf()){
+            foundLeaf = true;
+        } else {
+            turnLeft();turnLeft();
+            move();
+            turnLeft();
+        }
+         return foundLeaf;
     }
 }
