@@ -149,9 +149,24 @@ public class KaraWorld extends World
         addObject(leaf22, 5, 6);
         Leaf leaf23 = new Leaf();
         addObject(leaf23, 5, 5);
-         MyKara mykara = new MyKara();
-        addObject(mykara, 1, 1);
-       
-      
+        MyKara myKara = new MyKara();
+        addObject(myKara, 1, 1);
+
+        myKara.setLocation(1,1);
+        Kiri kiri = new Kiri();
+        addObject(kiri,1,1);
+        myKara.setLocation(1,2);
+        removeObject(myKara);
+        kiri.setLocation(1,1);
+        myKara.setLocation(7,1);
+        kiri.turn();
+        kiri.setLocation(1,2);
+        kiri.setLocation(1,1);
+        kiri.setLocation(7,1);
+        MyKara myKara2 = new MyKara();
+        addObject(myKara2,1,1);
+        kiri.setLocation(1,7);
+        kiri.turn();
+        kiri.setLocation(1,1);
     }
 }
