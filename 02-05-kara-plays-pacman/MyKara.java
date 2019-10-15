@@ -25,9 +25,12 @@ public class MyKara extends Kara
         }
     }   
     public boolean leafRight(){
+        return false;
     }
     public boolean leafFront(){
+        return false;
     }
     public boolean leafLeft(){
+        return false;
     }
 }
