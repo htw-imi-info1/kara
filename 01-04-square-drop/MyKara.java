@@ -16,6 +16,14 @@ public class MyKara extends Kara
      * <i>In der Methode 'act()' koennen die Befehle fuer Kara programmiert werden</i>
      */
     public void act() 
+    
     {
+        stopAfterStep(4);
+        move();
+        move();
+        move();
+        move();
+        putLeaf();
+        turnRight();
     }  
 }

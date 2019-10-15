@@ -10,7 +10,7 @@ import greenfoot.*;
  */
 public class MyKara extends Kara
 {
-    int counter = 0;
+   
  
     /**
      * In the 'act()' method you can write your program for Kara <br>
@@ -18,7 +18,15 @@ public class MyKara extends Kara
      */
     public void act() 
     {
-       
+       int counter = 0;
+       if(onLeaf()) counter++;
+       move();
+       if(treeFront()){
+        Greenfoot.stop();
+        System.out.println("the counter is now: "+counter);
+        // are you sure you understood why it is 0 and not 1?
+        // if not do a manual walkthrough.
+    }
 
     } 
 
