@@ -35,11 +35,45 @@ public class MyKara extends Kara
 
     public void pushMushRoomThroughTunnel(){}
 
-    public void  findTunnelEntrance(){};
+    public void  findTunnelEntrance(){
+        while(!treeFront())move();
+        turnRight();
+        while(treeLeft())move();
+        turnLeft();
+    };
 
-    public void    walkThroughTunnel(){};
+    public boolean inTunnel(){
+        return treeLeft() && treeRight();
+    }
 
-    public void    findMushRoomOnRightSide(){};
+    public void    walkThroughTunnel(){
+        move();
+        while(inTunnel()) move();
+    };
+    
+    int row = 0;
+    public void findMushRoomOnRightSide(){
+        walkToRightHand();
+        // look in upper half
+        turnLeft();
+        boolean mushRoomFound = false;
+        while (!mushRoomFound... not on top){
+        move();
+        row = row+1;
+        turnLeft();
+        while(!mushroomFront() && !treeFront()) move();
+        if (treeFront()) walkBack();
+        else { mushRoomFound = true; 
+            goInPositionToPush();
+        
+        }
+        
+        
+        
+    };
+    public void walkToRightHand(){
+        // put logic to take care of mushroom in the middle here
+    while (!treeFront())move();}
 
     public void    moveToPushPosition(){};
 }
