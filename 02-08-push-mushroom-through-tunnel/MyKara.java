@@ -17,6 +17,29 @@ public class MyKara extends Kara
      */
     public void act() 
     {
-        
+        findMushRoom();
+        pushMushRoomOnLeaf();
+
     }  
+
+    public void findMushRoom(){
+        findTunnelEntrance();
+        walkThroughTunnel();
+        findMushRoomOnRightSide();
+        moveToPushPosition();
+    }
+
+    public void pushMushRoomOnLeaf(){
+        pushMushRoomThroughTunnel();
+    }
+
+    public void pushMushRoomThroughTunnel(){}
+
+    public void  findTunnelEntrance(){};
+
+    public void    walkThroughTunnel(){};
+
+    public void    findMushRoomOnRightSide(){};
+
+    public void    moveToPushPosition(){};
 }
