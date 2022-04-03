@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Tree
+comment0.text=\n\ A\ tree\ is\ a\ barrier\ for\ Kara.\ Kara\ can\ neither\ move\ through\ nor\ push\ trees.\n\n\ @author\ Marco\ Jakob\ (majakob@gmx.ch)\n\ @version\ 1.3\ (2012-07-04)\n
+comment1.params=world
+comment1.target=void\ addedToWorld(greenfoot.World)
+comment1.text=\n\ This\ method\ is\ called\ when\ a\ new\ Tree\ is\ added\ to\ the\ world.\ It\ checks\ whether\n\ it\ is\ ok\ to\ put\ it\ there.\n
+comment2.params=x\ y
+comment2.target=void\ setLocation(int,\ int)
+comment2.text=\n\ Overriding\ setLocation(...)\ of\ the\ Actor\ class\ to\ prevent\ dragging\ the\ Tree\ \n\ on\ a\ Kara,\ Mushroom,\ Leaf,\ or\ another\ Tree.\n
+numComments=3

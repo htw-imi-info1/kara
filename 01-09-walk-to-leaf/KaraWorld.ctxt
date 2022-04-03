@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=KaraWorld
+comment0.text=\n\ This\ class\ creates\ a\ world\ for\ Kara.\ It\ contains\ settings\ for\ height\ and\ \n\ width\ of\ the\ world\ and\ initializes\ the\ Actors.\n\ \n\ @author\ Marco\ Jakob\ (majakob@gmx.ch)\n\ @version\ 1.3\ (2012-07-04)\n
+comment1.params=
+comment1.target=KaraWorld()
+comment1.text=\n\ Creates\ a\ world\ for\ Kara.\n
+comment2.params=
+comment2.target=void\ prepare()
+comment2.text=\n\ Prepare\ the\ world,\ i.e.\ create\ all\ initial\ actors.\n\ \n\ Hint\:\n\ First\ create\ and\ position\ all\ Actors\ with\ the\ mouse\ in\ the\ world.\n\ Then\ right-click\ on\ the\ world\ and\ choose\ 'Save\ the\ World'.\ This\ will\n\ automatically\ generate\ the\ content\ of\ this\ method.\n
+numComments=3

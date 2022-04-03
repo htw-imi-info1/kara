@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Leaf
+comment0.text=\n\ A\ leaf\ can\ be\ put\ and\ removed\ by\ Kara.\n\ \n\ @author\ Marco\ Jakob\ (majakob@gmx.ch)\n\ @version\ 1.3\ (2012-07-04)\n
+comment1.params=world
+comment1.target=void\ addedToWorld(greenfoot.World)
+comment1.text=\n\ This\ method\ is\ called\ when\ a\ new\ Leaf\ is\ added\ to\ the\ world.\ It\ checks\ whether\n\ it\ is\ ok\ to\ put\ it\ there.\n
+comment2.params=x\ y
+comment2.target=void\ setLocation(int,\ int)
+comment2.text=\n\ Overriding\ setLocation(...)\ of\ the\ Actor\ class\ to\ prevent\ dragging\ the\ Leaf\ \n\ on\ a\ Tree\ or\ another\ Leaf.\n
+numComments=3
