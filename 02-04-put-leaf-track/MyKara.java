@@ -14,9 +14,18 @@ public class MyKara extends Kara
      * In the 'act()' method you can write your program for Kara <br>
      * <i>In der Methode 'act()' koennen die Befehle fuer Kara programmiert werden</i>
      */
+    public void putLeafIfNeeded(){
+        if(!onLeaf()){
+                putLeaf();
+            }
+    }
     public void act() 
     {
-           
-    }  
-    
+        putLeafIfNeeded();
+        if (treeFront()){
+            Greenfoot.stop();
+        }else{
+            move();
+        }         
+    }    
 }

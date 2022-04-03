@@ -10,12 +10,30 @@ import greenfoot.*;
  */
 public class MyKara extends Kara
 {
+<<<<<<< HEAD
+=======
+
+>>>>>>> preparation week2
     /**
      * In the 'act()' method you can write your program for Kara <br>
      * <i>In der Methode 'act()' koennen die Befehle fuer Kara programmiert werden</i>
      */
     public void act() 
+<<<<<<< HEAD
     {
 
     }  
+=======
+    {  
+        move();
+        turnLeft();
+        move();
+        turnRight();
+        move();
+        move();
+        turnRight();
+        move();
+        turnLeft();     
+}  
+>>>>>>> preparation week2
 }

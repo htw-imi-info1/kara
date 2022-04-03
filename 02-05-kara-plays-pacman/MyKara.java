@@ -11,11 +11,38 @@ import greenfoot.*;
 public class MyKara extends Kara
 {
     /**
-     * In the 'act()' method you can write your program for Kara <br>
-     * <i>In der Methode 'act()' koennen die Befehle fuer Kara programmiert werden</i>
+     * Start: Kara steht auf dem nächsten Blatt.
+     * Step:  Blatt aufnehmen und zu nächstem Blatt gehen.
      */
     public void act() 
     {
-       
-    }      
+        removeLeaf();
+        if (treeFront()){
+            Greenfoot.stop();
+        } else {
+            findNextLeaf();
+        }      
+    }  
+
+    public void goBack(){
+        turnRight();turnRight();
+        move();
+    }
+
+    public void findNextLeaf(){
+        // vorne gucken
+        move();
+        if (onLeaf()) return;
+        goBack();
+        // nach links laufen
+        turnRight();
+        move();
+        if (onLeaf()) return;
+        goBack();
+        // nach rechts laufen
+        move();
+        if (onLeaf()) return;
+        System.out.println("Kara couldn't find a leaf!");
+        Greenfoot.stop(); 
+    }
 }

@@ -18,8 +18,30 @@ public class MyKara extends Kara
      */
     public void act() 
     {
-
-    }  
-
-   
+        if (treeFront()){
+            countLine();
+        } else {
+            move();
+        }  
+        if (onLeaf()){
+            Greenfoot.stop();
+            System.out.println("The longest line was: "+longestLine);
+        }
+    }
+    public void countLine(){
+        int count = 0;
+        turnLeft();
+        while (treeRight()){
+            count++;
+            move();
+        }
+        // oben angekommen
+        if (count > longestLine) longestLine = count;
+        turnRight();move();move();turnRight();
+        while (count > 0){
+            move();
+            count--;
+        }
+        turnLeft();
+    }
 }

@@ -15,9 +15,33 @@ public class MyKara extends Kara
      * In the 'act()' method you can write your program for Kara <br>
      * <i>In der Methode 'act()' koennen die Befehle fuer Kara programmiert werden</i>
      */
+    int counter = 0;
+    boolean walkingToTheRight = true;
     public void act() 
     {
-        
+        if (onLeaf()) counter++;
+        if (treeFront()){
+            turnOrStop();
+        } else {
+            move();
+        }  
     }
-   
+    public void turn(){
+    if (walkingToTheRight){
+            turnRight();
+        } else {
+            turnLeft();
+        }
+    }
+    public void turnOrStop(){
+        turn();
+        if (treeFront()){
+            Greenfoot.stop();
+        }else {
+            move();
+            turn();
+        }
+        walkingToTheRight = !walkingToTheRight;
+    }
+
 }

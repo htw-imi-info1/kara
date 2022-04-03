@@ -39,8 +39,9 @@ public class KaraWorld extends World
      */
     private void prepare() 
     {
-        MyKara mykara = new MyKara();
+        ActKara mykara = new ActKara();
         addObject(mykara, 0, 0);
+        addObject(new LoopKara(),1,0);
         Tree tree = new Tree();
         addObject(tree, 19, 0);
         Leaf leaf = new Leaf();

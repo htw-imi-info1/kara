@@ -17,5 +17,19 @@ public class MyKara extends Kara
      */
     public void act() 
     {
+        move();
+        // starting to walk around the tree
+        turnLeft();
+        move();
+        turnRight();
+        move();
+        move();
+        turnRight();
+        move();
+        turnLeft();
+        
+        // ok, walk away...
+        
+        move();
     }  
 }
