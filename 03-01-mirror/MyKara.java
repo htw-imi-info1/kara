@@ -16,8 +16,46 @@ public class MyKara extends Kara
      */
     public void act() 
     {
-        
+        mirrorLine();
+        if (treeFront()){
+            Greenfoot.stop();
+        } else {
+            move();
+        }
     }  
 
-    
+    public void mirrorLine(){
+        int column = 1;
+        boolean thereIsAnotherColumn = true;
+        while (thereIsAnotherColumn){
+             thereIsAnotherColumn = mirrorLeaf(column);
+             column++;
+        }
+    }
+
+    public boolean mirrorLeaf(int column){
+        turnLeft();
+        move(column);
+        boolean thereIsAnotherColumn = !treeFront();
+        if(onLeaf()){
+            putLeaf(column);
+        } else {
+            turnAround();
+            move(column);
+            turnLeft();
+        }
+        return thereIsAnotherColumn;
+    }
+
+    public void putLeaf(int column){
+        turnAround();
+        move(2*column);putLeaf();
+        turnAround();
+        move(column);
+        turnRight();
+
+    }
+
+    public void turnAround(){turnRight();turnRight();}
+
 }
