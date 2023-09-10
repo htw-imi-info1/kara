@@ -10,6 +10,17 @@ import greenfoot.*;
  */
 public class MyKara extends Kara
 {
+    public void aroundTree(){
+        turnLeft();
+        move();
+        turnRight();
+        move();
+        move();
+        turnRight();
+        move();
+        turnLeft();
+    }
+
     /**
      * In the 'act()' method you can write your program for Kara <br>
      * <i>In der Methode 'act()' koennen die Befehle fuer Kara programmiert werden</i>
@@ -17,5 +28,12 @@ public class MyKara extends Kara
     public void act() 
     {
 
+        if (treeFront()){
+            aroundTree();
+        } else {
+            move();
+        }
+        if (onLeaf())
+            Greenfoot.stop();
     }  
 }
