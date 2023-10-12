@@ -24,6 +24,9 @@ classDiagram
       -int x
       -int y
       -int rotation
+      +int getX()
+      +int getY()
+      +int getRotation()
     }
     class Kara{
 
