@@ -40,9 +40,13 @@ public class KaraWorld extends World
     private void prepare() 
     {
 
-        MyKara mykara = new MyKara();
-        addObject(mykara, 1, 5);
-        mykara.setLocation(0, 1);
-    
+        MyKara myKara = new MyKara();
+        addObject(myKara, 1, 5);
+        myKara.setLocation(0, 1);
+
+        Mushroom mushroom = new Mushroom();
+        addObject(mushroom,4,1);
+        myKara.setLocation(3,1);
+        mushroom.setLocation(4,2);
     }
 }
