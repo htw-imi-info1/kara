@@ -4,4 +4,6 @@ comment0.text=\n\ MyKara\ is\ a\ subclass\ of\ Kara.\ Therefore,\ it\ inherits\ 
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\n\ In\ the\ 'act()'\ method\ you\ can\ write\ your\ program\ for\ Kara\ <br>\n\ <i>In\ der\ Methode\ 'act()'\ koennen\ die\ Befehle\ fuer\ Kara\ programmiert\ werden</i>\n
-numComments=2
+comment2.params=
+comment2.target=int\ countLeaves()
+numComments=3
